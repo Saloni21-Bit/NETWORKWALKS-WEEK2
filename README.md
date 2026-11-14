@@ -353,22 +353,45 @@ The following evidence demonstrates the practical network scanning activities.
 
 ### 🖼️ Evidence 01 – Zenmap Network Topology
 
-![Zenmap Network Topology](Evidence/zenmap_topology.png)
+<img width="1916" height="1142" alt="nmap" src="https://github.com/user-attachments/assets/611c21ab-341e-4f22-a773-2809d11fad63" />
+
 
 *Figure 1: Network topology showing discovered hosts.*
 
 ### 🖼️ Evidence 02 – Nmap Scan Results
 
-![Nmap Scan Results](Evidence/nmap_scan.png)
+<img width="1595" height="892" alt="Screenshot 2026-11-13 213724" src="https://github.com/user-attachments/assets/9709521a-7a43-4927-bd66-d0e2eedaa4e9" />
+
 
 *Figure 2: Nmap ping scan showing three active hosts.*
 
 ### 📄 Evidence 03 – Saved Network Topology
 
-[📥 View Network Topology PDF](Evidence/nmap.pdf)
+<img width="702" height="717" alt="image" src="https://github.com/user-attachments/assets/814e7428-9bf8-4d9d-8301-0f455fb1ebe7" />
 
-Additional screenshots for PM1, PM3 and PM4 can be organized in their respective evidence folders.
+Additional Practical Evidence
 
+Screenshots documenting the remaining practical activities are organized in their respective folders:
+
+Module
+
+Evidence
+
+W2-PM1
+
+Kali Linux footprinting commands and outputs
+
+W2-PM3
+
+Maltego graph and transformation results
+
+W2-PM4
+
+theHarvester commands and outputs
+
+W2-PM5
+
+Nmap scan and Zenmap topology
 ---
 
 # 🏁 CONCLUSION
