@@ -369,29 +369,20 @@ The following evidence demonstrates the practical network scanning activities.
 
 <img width="702" height="717" alt="image" src="https://github.com/user-attachments/assets/814e7428-9bf8-4d9d-8301-0f455fb1ebe7" />
 
-Additional Practical Evidence
+### 📂 Additional Practical Evidence
 
-Screenshots documenting the remaining practical activities are organized in their respective folders:
+Screenshots and supporting materials for each completed practical module are organized in their respective folders.
 
-Module
+| Module | Practical | Evidence |
+|:---:|---|---|
+| W2-PM1 | Kali Linux Footprinting | Commands & Output Screenshots |
+| W2-PM3 | Maltego Footprinting | Graph & Transformation Results |
+| W2-PM4 | theHarvester Footprinting | Commands & Output Screenshots |
+| W2-PM5 | Zenmap Network Scanning | Nmap Results & Network Topology |
 
-Evidence
+📁 **Evidence Directory:** `Evidence/`
 
-W2-PM1
-
-Kali Linux footprinting commands and outputs
-
-W2-PM3
-
-Maltego graph and transformation results
-
-W2-PM4
-
-theHarvester commands and outputs
-
-W2-PM5
-
-Nmap scan and Zenmap topology
+---
 ---
 
 # 🏁 CONCLUSION
