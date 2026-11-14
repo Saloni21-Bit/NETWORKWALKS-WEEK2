@@ -1,435 +1,425 @@
+# 🔐 WEEK 02 – FOOTPRINTING, RECONNAISSANCE & NETWORK SCANNING
 
-# 🔐 WEEK 2 – CYBERSECURITY & ETHICAL HACKING
-## Footprinting, Reconnaissance & Network Scanning
+### Cybersecurity & Ethical Hacking Internship | NETWORKWALKS
 
-**Internship Program:** NETWORKWALKS  
-**Batch:** B084  
-**Week:** 02  
-**Domain:** Cybersecurity & Ethical Hacking  
-**Author:** Saloni Kakkar  
-**Tools:** Kali Linux, Maltego, theHarvester, Zenmap, Nmap  
-**Platform:** GitHub
+**👤 Intern:** Saloni Kakkar  
+**🎓 Batch:** B084 – NETWORKWALKS  
+**📅 Week:** 02  
+**🔍 Domain:** Cybersecurity & Ethical Hacking  
+**🎯 Focus Areas:** Footprinting | OSINT | Reconnaissance | Network Scanning
 
 ---
 
-# 📌 1. Project Overview
+# 📌 PROJECT OVERVIEW
 
-This repository documents my Week 2 practical activities as part of the Cybersecurity Internship Program at NETWORKWALKS.
+This repository documents the practical activities completed during Week 02 of my Cybersecurity and Ethical Hacking Internship at NETWORKWALKS.
 
-The main objective of this week's activities was to understand how cybersecurity professionals perform information gathering, footprinting, reconnaissance, and network scanning using different cybersecurity tools.
+The primary objective was to understand footprinting and reconnaissance techniques used to gather publicly available information, investigate digital footprints, analyze domain infrastructure and identify active hosts within a network.
 
-I explored multiple tools available in Kali Linux and learned how to identify publicly available information, investigate domain-related data, and discover active devices on a local network.
-
-The practical activities helped me understand how reconnaissance and scanning are performed before moving towards vulnerability assessment and penetration testing.
+The practical work covered four modules using Kali Linux utilities, Maltego, theHarvester and Zenmap.
 
 ---
 
-# 🎯 2. Objectives
-
-The objectives of this week's practical work were:
+# 🎯 OBJECTIVES
 
 - Understand the fundamentals of footprinting and reconnaissance.
-- Learn how to collect publicly available information about a target.
-- Explore different Kali Linux information-gathering tools.
-- Understand Google Hacking Database (GHDB) and search operators.
-- Learn how to perform footprinting using Maltego.
-- Discover email addresses and subdomains using theHarvester.
-- Understand network discovery using Nmap and Zenmap.
-- Identify active hosts within a local network.
-- Generate and interpret a network topology.
-- Document practical activities and their observations.
+- Gather domain registration and DNS-related information.
+- Identify website technologies and server configurations.
+- Perform OSINT investigations using Maltego.
+- Collect publicly available information using theHarvester.
+- Discover live hosts and visualize network topology using Zenmap.
+- Analyze potential security exposures and preventive measures.
 
 ---
 
-# 🛠️ 3. Tools & Technologies Used
+# 🛠️ TOOLS & TECHNOLOGIES USED
 
-| Tool | Purpose |
-|---|---|
-| Kali Linux | Linux distribution used for cybersecurity practicals |
-| WHOIS | Collect domain registration information |
-| WhatWeb | Identify website technologies |
-| Nslookup | Resolve domain names into IP addresses |
-| Curl | Inspect HTTP response headers |
-| Wafw00f | Identify Web Application Firewall technologies |
-| DNSRecon | Enumerate DNS records |
-| GHDB | Explore Google Dorks and advanced search operators |
-| Maltego | Visualize relationships between domains, people, infrastructure and other entities |
-| theHarvester | Gather publicly available email addresses and subdomains |
-| Nmap | Discover hosts and scan networks |
-| Zenmap | Graphical interface for Nmap |
-| Windows CMD | Identify local network configuration using ipconfig |
-
----
-
-# 📚 4. Practical Activities Performed
-
-## 4.1 W2-PM1 – Footprinting Using Multiple Kali Linux Tools
-
-**Objective:** To understand how different Kali Linux tools can be used to gather information about a target domain.
-
-I explored multiple tools to understand the different stages of information gathering.
-
-### Tools and their functions
-
-| Tool | Command | Information Collected |
+| Tool | Category | Purpose |
 |---|---|---|
-| WHOIS | `whois domain.com` | Domain registration details |
-| WhatWeb | `whatweb domain.com` | Website technologies and CMS |
-| Nslookup | `nslookup domain.com` | Domain IP resolution |
-| Curl | `curl -I https://domain.com` | HTTP response headers |
-| Wafw00f | `wafw00f domain.com` | Web Application Firewall detection |
-| DNSRecon | `dnsrecon -d domain.com` | DNS records and infrastructure information |
-
-### Learning Outcomes
-
-- Understood domain registration information.
-- Learned website technology fingerprinting.
-- Understood DNS resolution.
-- Learned how to inspect HTTP response headers.
-- Explored WAF detection.
-- Understood DNS enumeration.
-
-These tools demonstrated how different information-gathering techniques contribute to the reconnaissance phase.
+| 🐉 Kali Linux | Operating System | Cybersecurity testing environment |
+| WHOIS | Footprinting | Domain registration information |
+| WhatWeb | Fingerprinting | Website technology identification |
+| Nslookup | DNS | Domain name resolution |
+| cURL | Web Analysis | HTTP response header inspection |
+| Wafw00f | Web Security | Web Application Firewall detection |
+| DNSRecon | DNS | DNS record enumeration |
+| Maltego | OSINT | Graphical link analysis and relationship mapping |
+| theHarvester | OSINT | Email and subdomain information gathering |
+| Nmap | Network Scanning | Host discovery and network scanning |
+| Zenmap | Network Scanning | Graphical scanning and topology visualization |
 
 ---
 
-## 4.2 W2-PM2 – Google Hacking Database (GHDB)
+# 🔍 MODULE 1 – FOOTPRINTING USING KALI LINUX TOOLS (W2-PM1)
 
-**Status: Not Completed**
+## Overview
 
-GHDB was part of the assigned practical activities but was not completed during this submission.
+Footprinting is an initial phase of reconnaissance in cybersecurity. It involves collecting publicly available information about a target domain to understand its digital infrastructure, technologies, DNS configuration and security mechanisms.
 
-### Objective
+**Target Domain:** `networkwalks.com`
 
-To understand how Google advanced search operators, also known as Google Dorks, can help identify publicly indexed information.
+## Tools and Commands
 
-### Concepts to Study
+### 1. WHOIS – Domain Information Gathering
 
-| Search Operator | Purpose |
+```bash
+whois networkwalks.com
+```
+
+**Purpose:**
+- Identify domain registration details.
+- Examine registrar information.
+- View registration and expiry information.
+- Identify name servers.
+
+### 2. WhatWeb – Technology Fingerprinting
+
+```bash
+whatweb networkwalks.com
+```
+
+**Purpose:**
+- Identify website technologies.
+- Detect CMS and web server information.
+- Examine technology details exposed by the website.
+
+### 3. Nslookup – DNS Resolution
+
+```bash
+nslookup networkwalks.com
+```
+
+**Purpose:**
+- Resolve domain names into IP addresses.
+- Examine DNS resolution information.
+
+### 4. cURL – HTTP Header Analysis
+
+```bash
+curl -I https://networkwalks.com
+```
+
+**Purpose:**
+- Retrieve HTTP response headers.
+- Examine server response information.
+- Understand information exposed through HTTP headers.
+
+### 5. Wafw00f – Firewall Detection
+
+```bash
+wafw00f networkwalks.com
+```
+
+**Purpose:**
+- Identify whether a Web Application Firewall protects the website.
+- Understand the role of WAF in web application security.
+
+### 6. DNSRecon – DNS Enumeration
+
+```bash
+dnsrecon -d networkwalks.com
+```
+
+**Purpose:**
+- Enumerate DNS records.
+- Examine name servers and mail server information.
+- Identify available DNS records.
+
+### 📊 Tools Summary
+
+| No. | Tool | Information Gathered |
+|---|---|---|
+| 1 | WHOIS | Domain registration details |
+| 2 | WhatWeb | Website technologies |
+| 3 | Nslookup | Domain IP information |
+| 4 | cURL | HTTP response headers |
+| 5 | Wafw00f | WAF information |
+| 6 | DNSRecon | DNS infrastructure |
+
+### 💡 Learning Outcome
+
+Gained practical understanding of domain footprinting, DNS enumeration, website technology fingerprinting, HTTP header analysis and firewall detection using Kali Linux.
+
+---
+
+# 🕸️ MODULE 2 – FOOTPRINTING WITH MALTEGO (W2-PM3)
+
+## Overview
+
+Maltego is an OSINT and graphical link-analysis tool used to investigate relationships between digital entities such as domains, email addresses, organizations and publicly available information.
+
+**Target Domain:** `networkwalks.com`
+
+### 🔧 Activities Performed
+
+1. Downloaded and installed Maltego.
+2. Completed the initial application configuration.
+3. Created and logged into a Maltego account.
+4. Created a new graph workspace.
+5. Selected the Domain entity and added it to the workspace.
+6. Configured the entity with `networkwalks.com`.
+7. Explored available email-related transforms.
+8. Executed relevant transforms to investigate associated information.
+
+### 📊 Key Concepts
+
+| Concept | Description |
 |---|---|
-| `site:` | Restrict search results to a particular website |
-| `filetype:` | Search for a specific file format |
-| `intitle:` | Search for terms appearing in page titles |
-| `inurl:` | Search for terms appearing in URLs |
-| `intext:` | Search for specific text within page content |
+| Entity | Represents information such as domains or email addresses |
+| Transform | Retrieves related information from available data sources |
+| Graph | Visually represents relationships between entities |
+| OSINT | Gathering information from publicly available sources |
 
-### Learning Outcome
+### 💡 Learning Outcome
 
-Understood the basic concept of Google Dorks and how search operators can be used during passive reconnaissance.
-
-**Note:** The practical GHDB activity remains pending and is not claimed as completed.
+Learned how Maltego supports OSINT investigations through entity creation, transformations and graphical relationship mapping.
 
 ---
 
-## 4.3 W2-PM3 – Footprinting Using Maltego
+# 📧 MODULE 3 – FOOTPRINTING WITH THEHARVESTER (W2-PM4)
 
-**Objective:** To understand how Maltego can be used for visual information gathering and relationship mapping.
+## Overview
 
-Maltego is an open-source intelligence (OSINT) tool that helps visualize connections between different entities.
+theHarvester is an information-gathering tool used to collect publicly available information such as email addresses, hostnames, IP addresses and subdomains from different OSINT sources.
 
-### Key Concepts
+**Target Domain:** `microsoft.com`
 
-- Entity creation
-- Domain investigation
-- Relationship mapping
-- Transformations
-- Infrastructure visualization
-- OSINT-based reconnaissance
+### 🔹 Practical – Information Gathering Using Baidu
 
-### Learning Outcomes
-
-- Understood the Maltego interface.
-- Explored how entities represent different types of information.
-- Learned how transformations can retrieve related information.
-- Understood how visual graphs help in analyzing relationships.
-
----
-
-## 4.4 W2-PM4 – Footprinting Using theHarvester
-
-**Objective:** To collect publicly available information related to a target organization using theHarvester in Kali Linux.
-
-### Command Used
+**Command Executed:**
 
 ```bash
 theHarvester -d microsoft.com -b baidu
 ```
 
-### Command Explanation
+### ⚙️ Command Explanation
 
-| Parameter | Explanation |
+| Parameter | Description |
 |---|---|
-| `theHarvester` | Starts the information-gathering tool |
+| `theHarvester` | Launches the information-gathering tool |
 | `-d` | Specifies the target domain |
 | `microsoft.com` | Target domain |
 | `-b` | Specifies the search source |
-| `baidu` | Search engine used as the data source |
+| `baidu` | Selected search engine |
 
-### Information Gathering
+### 📋 Information Gathering Capabilities
 
-TheHarvester can help discover:
+- Publicly available email addresses.
+- Subdomains and hostnames.
+- IP address information.
+- Domain-related infrastructure information.
 
-- Publicly available email addresses
-- Subdomains
-- Hostnames
-- Related infrastructure information
+### 🔎 Observations
 
-### Learning Outcomes
+The practical demonstrated how theHarvester can collect publicly available information through search engine sources.
 
-- Learned how to execute theHarvester.
-- Understood domain-based information gathering.
-- Explored the use of different search sources.
-- Understood the importance of passive reconnaissance.
+The Baidu search did not return email addresses, IP addresses or hostnames in the observed output.
+
+### 💡 Learning Outcome
+
+Understood domain-based information gathering, search engine data sources and the importance of passive reconnaissance.
 
 ---
 
-## 4.5 W2-PM5 – Network Scanning Using Zenmap
+# 🖥️ MODULE 4 – NETWORK SCANNING WITH ZENMAP (W2-PM5)
 
-**Objective:** To discover active devices on my local network, identify their IP addresses, and visualize the network topology using Zenmap.
+## Overview
 
-For this activity, I used Zenmap, which provides a graphical interface for Nmap.
+Zenmap is the graphical interface of Nmap. It is used for network discovery, host identification and security auditing. It also provides a visual representation of discovered network devices.
 
-### Step 1: Identify the Target Network
+### 🔧 Activities Performed
 
-I selected my local network subnet:
+**Step 1 – Identify Local Network Configuration**
 
-```bash
+Used the Windows command:
+
+```cmd
+ipconfig
+```
+
+This helped identify the local IP configuration and network details.
+
+**Step 2 – Identify Target Subnet**
+
+```text
 192.168.29.0/24
 ```
 
-### Step 2: Perform a Ping Scan
-
-**Command executed:**
+**Step 3 – Perform Host Discovery**
 
 ```bash
 nmap -sn 192.168.29.0/24
 ```
 
-### Command Explanation
+### ⚙️ Command Explanation
 
-| Parameter | Explanation |
+| Parameter | Description |
 |---|---|
-| `nmap` | Starts the Nmap network scanning tool |
-| `-sn` | Performs host discovery without a port scan |
+| `nmap` | Starts the Nmap scanning tool |
+| `-sn` | Performs host discovery without port scanning |
 | `192.168.29.0/24` | Specifies the target subnet |
 
-### Step 3: Scan Results
+### 📊 Network Scan Results
 
-The scan successfully discovered three active hosts.
-
-**Actual scan information:**
-
-| Parameter | Result |
+| Parameter | Observed Result |
 |---|---|
-| Target Network | `192.168.29.0/24` |
+| Target Network | 192.168.29.0/24 |
 | Scan Type | Ping Scan |
-| Nmap Command | `nmap -sn 192.168.29.0/24` |
-| Total IP Addresses Scanned | 256 |
-| Live Hosts Found | 3 |
+| Total IP Addresses | 256 |
+| Active Hosts Identified | 3 |
 | Scan Duration | 3.26 seconds |
 | Nmap Version | 7.99.3 |
 
-### Step 4: Live Hosts Discovered
+### 🖧 Discovered Hosts
 
-| S.No. | Hostname / IP Address | Status |
+| No. | IP Address / Hostname | Status |
 |---|---|---|
-| 1 | `192.168.29.1` (reliance.reliance) | Active |
-| 2 | `192.168.29.37` | Active |
-| 3 | `192.168.29.230` | Active |
+| 1 | 192.168.29.1 (reliance.reliance) | 🟢 Active |
+| 2 | 192.168.29.37 | 🟢 Active |
+| 3 | 192.168.29.230 | 🟢 Active |
 
-All three discovered hosts responded during the host discovery scan.
-
-### Step 5: MAC Address Information
-
-The scan also displayed MAC address information for discovered devices where available.
+### 🔍 MAC Address Information
 
 | IP Address | MAC Address |
 |---|---|
-| `192.168.29.1` | `A8:88:1F:A4:86:8C` |
-| `192.168.29.37` | `AA:BA:67:2E:11:54` |
-| `192.168.29.230` | Not displayed in the captured output |
+| 192.168.29.1 | A8:88:1F:A4:86:8C |
+| 192.168.29.37 | AA:BA:67:2E:11:54 |
+| 192.168.29.230 | Not available in captured output |
 
-### Step 6: Network Topology
+### 🗺️ Network Topology Visualization
 
-After completing the scan, I opened the **Topology** tab in Zenmap.
+After completing the scan:
 
-The topology visualization displayed the localhost connection and the three discovered network hosts.
+1. Opened the Topology tab in Zenmap.
+2. Enabled the topology legend.
+3. Reviewed the graphical representation of discovered hosts.
+4. Examined the connections displayed in the topology.
+5. Saved the network topology in PDF format.
 
-I also opened the topology legend to understand the different host and connection indicators.
+### 💡 Learning Outcome
 
-### Network Topology Observations
-
-- Three active hosts were identified.
-- The localhost node was displayed in the topology.
-- The discovered devices were represented as separate nodes.
-- Dashed connections indicated that traceroute information was unavailable.
-- The topology helped visualize the discovered network devices.
+Gained practical experience in network scanning, live host discovery, IP and MAC address identification and network topology visualization.
 
 ---
 
-# 📸 5. Practical Evidence & Screenshots
+# ⚠️ OVERALL RISK ANALYSIS
 
-The following screenshots demonstrate my actual Zenmap practical work.
+The following table summarizes potential security considerations associated with the techniques explored during the practical exercises.
 
-## Evidence 1 – Zenmap Network Topology
-
-This screenshot shows the topology generated after scanning my local network.
-
-![Zenmap Network Topology](Screenshot%202026-11-13%20213704.png)
-
-**Observation:** Three active hosts were successfully identified and represented in the network topology.
-
-## Evidence 2 – Nmap Ping Scan Output
-
-This screenshot displays the actual Nmap command and its output.
-
-![Nmap Scan Output](Screenshot%202026-11-13%20213724.png)
-
-**Observation:**
-
-- Target subnet: `192.168.29.0/24`
-- Three hosts found up.
-- 256 IP addresses scanned.
-- Total scanning time: 3.26 seconds.
-
-## Evidence 3 – Saved Network Topology
-
-The network topology was also saved as a PDF for documentation.
-
-[View Zenmap Network Topology PDF](nmap.pdf)
-
----
-
-# 🔍 6. Findings & Observations
-
-Based on the completed practical activities, the following observations were made.
-
-| No. | Activity | Observation | Significance |
+| No. | Finding | Potential Impact | Risk Level |
 |---|---|---|---|
-| 1 | WHOIS | Explored domain registration information | Helps understand domain ownership and registration |
-| 2 | WhatWeb | Explored website technology fingerprinting | Helps identify exposed technologies |
-| 3 | Nslookup | Learned domain-to-IP resolution | Helps identify network destinations |
-| 4 | Curl | Inspected HTTP response headers | Helps understand web server responses |
-| 5 | Wafw00f | Explored WAF detection | Helps identify security technologies |
-| 6 | DNSRecon | Explored DNS enumeration | Helps understand DNS infrastructure |
-| 7 | Maltego | Explored visual OSINT investigation | Helps map relationships between entities |
-| 8 | theHarvester | Performed domain-based information gathering | Helps discover publicly available information |
-| 9 | Zenmap | Discovered three active local network hosts | Helps understand network visibility |
-| 10 | GHDB | Practical activity not completed | Remains pending |
-
----
-
-# ⚠️ 7. Risk Analysis
-
-Information gathered during reconnaissance and network scanning can help security professionals understand the exposure of a system.
-
-The following table describes potential risks associated with the observations.
-
-| No. | Finding | Potential Risk | Risk Level |
-|---|---|---|---|
-| 1 | Publicly available domain information | May reveal infrastructure-related details | Low |
-| 2 | Website technology fingerprinting | May help identify outdated technologies | Medium |
+| 1 | Public domain information | May assist infrastructure reconnaissance | Low |
+| 2 | Website technology exposure | May help identify outdated technologies | Medium |
 | 3 | DNS information exposure | May reveal infrastructure details | Medium |
-| 4 | Publicly available email addresses | May be misused for phishing attempts | Medium |
+| 4 | Public email information | Could be misused for phishing | Medium |
 | 5 | Multiple active network hosts | Unknown devices may require investigation | Medium |
-| 6 | Network information exposure | May assist further reconnaissance | Low |
 
-**Important:** These are potential risks, not confirmed vulnerabilities. No exploitation or unauthorized access was performed as part of the documented activities.
-
----
-
-# 🛡️ 8. Security Recommendations
-
-Based on the concepts explored during these activities, the following security recommendations are suggested:
-
-1. Regularly review publicly exposed domain and infrastructure information.
-2. Keep website technologies, CMS platforms, and plugins updated.
-3. Review DNS configurations and remove unnecessary records.
-4. Protect publicly available organizational email addresses from misuse.
-5. Regularly monitor network-connected devices.
-6. Investigate unknown or unexpected devices.
-7. Maintain updated network documentation.
-8. Use appropriate firewall and security configurations.
-9. Perform reconnaissance and scanning only with proper authorization.
+*Note: These are potential security risks, not confirmed vulnerabilities.*
 
 ---
 
-# 📖 9. Learning Outcomes
+# 🛡️ SECURITY RECOMMENDATIONS
 
-During Week 2, I gained practical exposure to several cybersecurity concepts.
-
-### Technical Skills
-
-- Linux-based information gathering.
-- Domain footprinting and reconnaissance.
-- DNS enumeration and resolution.
-- Website technology identification.
-- OSINT investigation using Maltego.
-- Email and subdomain discovery using theHarvester.
-- Network discovery using Nmap.
-- Network topology visualization using Zenmap.
-- Understanding Google Dorking concepts.
-
-### Practical Understanding
-
-I learned that reconnaissance is an important stage of penetration testing because it helps security professionals understand a target environment before conducting further security assessments.
-
-I also understood the importance of interpreting scan results instead of simply executing commands.
+1. **Strong Authentication:** Use strong passwords and appropriate authentication mechanisms.
+2. **Software Updates:** Keep website technologies, plugins and server components updated.
+3. **DNS Security:** Review DNS configurations and remove unnecessary records.
+4. **Email Protection:** Implement anti-phishing measures.
+5. **Network Monitoring:** Regularly identify and investigate unknown devices.
+6. **Firewall Configuration:** Maintain appropriate firewall and access-control policies.
+7. **Authorized Testing:** Perform security testing only within an approved scope.
 
 ---
 
-# 📝 10. Conclusion
+# 🧠 KEY LEARNINGS
 
-Week 2 of my Cybersecurity Internship at NETWORKWALKS helped me develop a better understanding of footprinting, reconnaissance, OSINT, and network scanning.
+During these practical modules, I gained hands-on experience in:
 
-I explored different Kali Linux tools and their applications in information gathering. I also learned how Maltego can visualize relationships between entities and how theHarvester can collect publicly available information.
-
-One of the important practical activities was network discovery using Zenmap. I successfully scanned my local network using Nmap and identified three active hosts within the `192.168.29.0/24` subnet. I also generated a network topology to visualize the discovered devices.
-
-Although the GHDB practical activity remains incomplete, I gained an understanding of the basic Google search operators used in passive reconnaissance.
-
-Overall, these activities improved my understanding of how cybersecurity professionals approach information gathering and network discovery.
-
----
-
-# 📂 11. Repository Structure
-
-```text
-Week-2-Cybersecurity/
-│
-├── README.md
-│
-├── Screenshot 2026-11-13 213704.png
-│
-├── Screenshot 2026-11-13 213724.png
-│
-└── nmap.pdf
-```
+- Footprinting and passive reconnaissance.
+- Domain registration and DNS information gathering.
+- Website technology fingerprinting.
+- HTTP response header analysis.
+- Web Application Firewall detection.
+- OSINT and graphical link analysis using Maltego.
+- Email and subdomain information gathering using theHarvester.
+- Network discovery using Nmap and Zenmap.
+- Live host identification and topology visualization.
+- Technical documentation and security analysis.
 
 ---
 
-# ⚖️ 12. Disclaimer
+# 📸 EVIDENCE & SCREENSHOTS
 
-All network scanning activities documented in this repository were performed on my own local network for educational purposes.
+The following evidence demonstrates the practical network scanning activities.
 
-Reconnaissance and scanning should only be performed on systems, networks, and domains for which proper authorization has been obtained.
+### 🖼️ Evidence 01 – Zenmap Network Topology
 
-This repository is intended for cybersecurity education, learning, and documentation purposes only.
+![Zenmap Network Topology](Evidence/zenmap_topology.png)
+
+*Figure 1: Network topology showing discovered hosts.*
+
+### 🖼️ Evidence 02 – Nmap Scan Results
+
+![Nmap Scan Results](Evidence/nmap_scan.png)
+
+*Figure 2: Nmap ping scan showing three active hosts.*
+
+### 📄 Evidence 03 – Saved Network Topology
+
+[📥 View Network Topology PDF](Evidence/nmap.pdf)
+
+Additional screenshots for PM1, PM3 and PM4 can be organized in their respective evidence folders.
 
 ---
 
-# 👩‍💻 13. Author
+# 🏁 CONCLUSION
 
-**Saloni Kakkar**  
-Cybersecurity & Ethical Hacking Intern  
-NETWORKWALKS – Batch B084
+During Week 02 of my Cybersecurity and Ethical Hacking internship at NETWORKWALKS, I completed practical activities covering footprinting, reconnaissance, OSINT and network scanning.
 
-**Week:** 02  
-**Repository:** GitHub  
-**Focus Areas:** Cybersecurity | Ethical Hacking | OSINT | Footprinting | Network Scanning | Penetration Testing
+I explored six Kali Linux tools, investigated domain relationships using Maltego, performed information gathering with theHarvester and conducted network discovery using Zenmap.
+
+The network scanning practical successfully identified three active hosts within my local network and provided a graphical representation of the discovered devices.
+
+Overall, these activities strengthened my understanding of reconnaissance methodologies, information-gathering techniques and network discovery tools used in cybersecurity assessments.
 
 ---
 
-⭐ Thank you for visiting my Week 2 cybersecurity practical repository!
+# 📚 REFERENCES
 
-#CyberSecurity #EthicalHacking #KaliLinux #Nmap #Zenmap #OSINT #Footprinting #NetworkScanning #PenetrationTesting #NETWORKWALKS
+| Resource | Documentation |
+|---|---|
+| NETWORKWALKS | [Official Website](https://networkwalks.com/) |
+| Kali Linux | [Official Documentation](https://www.kali.org/docs/) |
+| Nmap | [Reference Guide](https://nmap.org/book/man.html) |
+| Zenmap | [Official Documentation](https://nmap.org/zenmap/) |
+| Maltego | [Documentation](https://docs.maltego.com/) |
+| theHarvester | [GitHub Repository](https://github.com/laramies/theHarvester) |
+| DNSRecon | [GitHub Repository](https://github.com/darkoperator/dnsrecon) |
+| Wafw00f | [GitHub Repository](https://github.com/EnableSecurity/wafw00f) |
+
+---
+
+# 👩‍💻 AUTHOR
+
+**Saloni Kakkar**
+
+🎓 Cybersecurity & Ethical Hacking Intern  
+🏢 NETWORKWALKS  
+📌 Batch: B084
+
+**Focus Areas:** Cybersecurity | Ethical Hacking | OSINT | Penetration Testing | Network Security
+
+---
+
+# ⚖️ DISCLAIMER
+
+This repository is created strictly for educational and learning purposes as part of a cybersecurity internship.
+
+All network scanning activities documented here were conducted on my own local network. Reconnaissance and scanning should only be performed on systems and networks where appropriate authorization has been obtained.
+
+The documented activities represent practical learning exercises and do not constitute a complete penetration test or independently verified security audit.
+
+---
+
+⭐ **Thank you for visiting my Week 02 cybersecurity repository!**
+
+`#CyberSecurity` `#EthicalHacking` `#KaliLinux` `#OSINT` `#Nmap` `#Zenmap` `#Maltego` `#PenetrationTesting`
